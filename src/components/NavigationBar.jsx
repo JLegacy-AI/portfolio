@@ -2,7 +2,7 @@ import React from "react";
 
 const NavigationBar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 w-full h-16 flex justify-center items-center">
+    <div className="fixed top-0 left-0 right-0 w-full h-16 flex justify-center items-center bg-white shadow-md">
       <ul className="flex justify-end items-center gap-8">
         <li>Home</li>
         <li>Services</li>
