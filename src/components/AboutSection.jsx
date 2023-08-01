@@ -6,12 +6,12 @@ const AboutSection = () => {
   return (
     <div className="w-screen h-screen flex justify-center items-center">
       <div className=" flex justify-end items-center mr-20">
-        <div className="h-80 w-60  overflow-hidden">
-          <img
+        <div className="h-80 w-60 bg-turquoise overflow-hidden">
+          {/* <img
             className="h-full -translate-x-5"
             src={ABOUT_IMAGE}
             alt="Jamal. Image"
-          />
+          /> */}
         </div>
       </div>
       <div className="w-[400px] space-y-5 ml-20">
