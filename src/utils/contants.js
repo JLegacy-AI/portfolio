@@ -1,3 +1,3 @@
-import ABOUT_IMAGE from "../images/owner.webp";
+import ABOUT_IMAGE from "../images/owner-image.jpeg";
 
 export { ABOUT_IMAGE };
