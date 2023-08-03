@@ -6,7 +6,7 @@ import ServiceSection from "../../components/ServiceSection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <Header />
       <AboutSection />
       <ServiceSection />
