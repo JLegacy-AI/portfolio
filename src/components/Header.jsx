@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 
 const Header = () => {
   return (
-    <div className="w-screen h-screen ">
+    <div className="w-full h-screen ">
       <NavigationBar />
       <HeroSection />
     </div>

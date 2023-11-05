@@ -1,119 +1,86 @@
 import React from "react";
+import { FaCode } from "react-icons/fa";
 import {
-  FaCode,
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNode,
-  FaPhp,
-} from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiExpress, SiJquery } from "react-icons/si";
+  AiOutlineRobot,
+  AiOutlineHighlight,
+  AiOutlineDesktop,
+} from "react-icons/ai";
+import { BsRobot } from "react-icons/bs";
 
-const ServiceCard = ({ icon, heading, technologies }) => {
+const ServiceCard = ({ icon, title, description }) => {
   return (
     <>
-      <div className="w-1/2 flex justify-center items-center my-4">
-        <div className="flex flex-col min-w-[300px] w-[450px] h-[200px] bg-white rounded-md p-3 border">
-          <div className="flex justify-start items-center space-x-3">
-            <div className="w-[40px] h-[40px] bg-turquoise flex justify-center items-center rounded-full text-white">
-              {icon}
-            </div>
-            <h1 className="text-xl text-turquoise">{heading}</h1>
-          </div>
-          <div className="flex flex-col my-3">
-            <h1 className="px-3 rounded-md bg-turquoise text-white w-fit">
-              Technologies
-            </h1>
-            <div className="flex flex-wrap text-3xl mt-4 gap-5 px-1">
-              {technologies.map((e, i) => {
-                return e;
-              })}
-            </div>
-          </div>
-        </div>
+      <div className="flex flex-col col-span-4 shadow-xl  p-5 transition-all  group hover:bg-turquoise rounded-md border">
+        <p className="text-5xl text-turquoise opacity-70 group-hover:text-white">
+          {icon}
+        </p>
+        <h1 className="font-formula text-2xl text-turquoise group-hover:text-white">
+          {title}
+        </h1>
+        <p className="group-hover:text-white opacity-60 font-sans">
+          {description}
+        </p>
       </div>
     </>
   );
 };
 
 const ServiceSection = () => {
-  const services = [
+  const servicesName = [
     {
-      icon: <FaCode />,
-      heading: "Web Development",
-      technologies: [
-        <FaHtml5 className="text-html5" />,
-        <FaCss3Alt className="text-css3" />,
-        <SiTailwindcss className="text-twitter" />,
-        <SiMongodb className="text-mongodb" />,
-        <FaReact className="text-reactjs" />,
-        <SiExpress className="text-mongodb" />,
-        <FaNode className="text-mongodb" />,
-        <SiJquery className="text-jquery" />,
-        <FaPhp className="text-php" />,
-      ],
+      title: "Web Design",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      icon: <AiOutlineHighlight />,
     },
     {
+      title: "Web Development",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       icon: <FaCode />,
-      heading: "Web Development",
-      technologies: [
-        <FaHtml5 className="text-html5" />,
-        <FaCss3Alt className="text-css3" />,
-        <SiTailwindcss className="text-twitter" />,
-        <SiMongodb className="text-mongodb" />,
-        <FaReact className="text-reactjs" />,
-        <SiExpress className="text-mongodb" />,
-        <FaNode className="text-mongodb" />,
-        <SiJquery className="text-jquery" />,
-        <FaPhp className="text-php" />,
-      ],
     },
     {
-      icon: <FaCode />,
-      heading: "Web Development",
-      technologies: [
-        <FaHtml5 className="text-html5" />,
-        <FaCss3Alt className="text-css3" />,
-        <SiTailwindcss className="text-twitter" />,
-        <SiMongodb className="text-mongodb" />,
-        <FaReact className="text-reactjs" />,
-        <SiExpress className="text-mongodb" />,
-        <FaNode className="text-mongodb" />,
-        <SiJquery className="text-jquery" />,
-        <FaPhp className="text-php" />,
-      ],
+      title: "Desktop Application",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      icon: <AiOutlineDesktop />,
     },
     {
-      icon: <FaCode />,
-      heading: "Web Development",
-      technologies: [
-        <FaHtml5 className="text-html5" />,
-        <FaCss3Alt className="text-css3" />,
-        <SiTailwindcss className="text-twitter" />,
-        <SiMongodb className="text-mongodb" />,
-        <FaReact className="text-reactjs" />,
-        <SiExpress className="text-mongodb" />,
-        <FaNode className="text-mongodb" />,
-        <SiJquery className="text-jquery" />,
-        <FaPhp className="text-php" />,
-      ],
+      title: "Deep Learning",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      icon: <AiOutlineRobot />,
+    },
+    {
+      title: "Machine Learning",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      icon: <BsRobot />,
+    },
+    {
+      title: "Machine Learning",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      icon: <BsRobot />,
     },
   ];
   return (
-    <div className="w-screen px-20">
+    <div className="w-full flex flex-col justify-center">
       <div className="w-full flex justify-center items-center">
         <h1 className="absolute opacity-10 w-full text-center text-9xl font-formula text-turquoise">
-          SERVICES
+          SERVICES.
         </h1>
         <div className="w-full flex flex-col justify-center items-center mt-28">
           <p className="text-lg">WHAT I DO!</p>
-          <h1 className="font-formula text-4xl text-turquoise">My Services</h1>
+          <h1 className="font-formula text-5xl text-turquoise">Services</h1>
         </div>
       </div>
-      <div className=" flex flex-wrap justify-between items-center mt-10">
-        {services.map((e, i) => {
-          return <ServiceCard {...e} />;
-        })}
+      <div className="flex justify-center">
+        <div className="w-[80%] grid grid-cols-12 gap-6">
+          {servicesName.map((service, index) => {
+            return <ServiceCard {...service} />;
+          })}
+        </div>
       </div>
     </div>
   );
