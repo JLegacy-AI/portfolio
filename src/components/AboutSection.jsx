@@ -29,7 +29,7 @@ const AboutSection = () => {
           accusamus.
         </p>
         <a className="block text-turquoise font-light" href="/">
-          Checkout my resume
+          Checkout my Profiles
         </a>
         <div className="flex gap-3 text-5xl">
           <FaTwitterSquare className="text-twitter" />
