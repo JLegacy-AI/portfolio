@@ -12,9 +12,9 @@ import { WEB_DEVELOPMENT } from "../utils/contants";
 
 const ServiceSection = () => {
   const servicesName = [
-    "Web Development",
-    "Machine Learnig",
     "Deep Learning",
+    "Machine Learnig",
+    "Web Development",
     "Desktop Application",
   ];
   return (
