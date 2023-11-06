@@ -13,12 +13,12 @@ const AboutSection = () => {
           <img
             className="absolute top-0"
             src={ABOUT_IMAGE}
-            alt="Jamal. Image"
+            alt="Jamal Muhammad"
           />
           <img
             className="absolute bottom-0"
             src={ABOUT_IMAGE}
-            alt="Jamal. Image"
+            alt="Jamal Muhammad"
           />
         </div>
       </div>

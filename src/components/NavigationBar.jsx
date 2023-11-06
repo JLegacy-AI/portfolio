@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
@@ -14,7 +14,7 @@ const NavigationBar = () => {
       <ul className="flex justify-center items-center gap-8 w-1/2 text-white ">
         <li>
           <Link
-            className="cursor-pointer"
+            className="cursor-pointer hover:border-b-2 hover:border-white "
             to="about"
             spy={true}
             smooth={true}
@@ -26,7 +26,7 @@ const NavigationBar = () => {
         </li>
         <li>
           <Link
-            className="cursor-pointer"
+            className="cursor-pointer hover:border-b-2 hover:border-white "
             to="service"
             spy={true}
             smooth={true}
@@ -38,7 +38,7 @@ const NavigationBar = () => {
         </li>
         <li>
           <Link
-            className="cursor-pointer"
+            className="cursor-pointer hover:border-b-2 hover:border-white "
             to="project"
             spy={true}
             smooth={true}
@@ -50,7 +50,7 @@ const NavigationBar = () => {
         </li>
         <li>
           <Link
-            className="cursor-pointer"
+            className="cursor-pointer hover:border-b-2 hover:border-white "
             to="contact"
             spy={true}
             smooth={true}
