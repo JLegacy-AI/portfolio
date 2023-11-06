@@ -65,7 +65,7 @@ const ServiceSection = () => {
     },
   ];
   return (
-    <div className="w-full flex flex-col justify-center">
+    <div id="service" className="w-full flex flex-col justify-center">
       <div className="w-full flex justify-center items-center">
         <h1 className="absolute opacity-10 w-full text-center text-9xl font-formula text-turquoise">
           SERVICES.

@@ -7,11 +7,18 @@ const NavigationBar = () => {
         Jamal.
       </h1>
       <ul className="flex justify-center items-center gap-8 w-1/2 text-white ">
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#service">Services</a>
+        </li>
+        <li>
+          <a href="#project">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
   );

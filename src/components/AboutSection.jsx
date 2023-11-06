@@ -4,7 +4,10 @@ import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <div
+      id="about"
+      className="w-full h-screen flex justify-center items-center"
+    >
       <div className=" flex justify-end items-center mr-20">
         <div className="h-96 w-72 bg-turquoise relative">
           <img

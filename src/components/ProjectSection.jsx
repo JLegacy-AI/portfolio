@@ -70,7 +70,7 @@ const infos = [
 
 const ProjectSection = () => {
   return (
-    <div className="w-full flex flex-col justify-center">
+    <div id="project" className="w-full flex flex-col justify-center">
       <div className="w-full flex justify-center items-center py-10">
         <h1 className="absolute opacity-10 w-full text-center text-9xl font-formula text-turquoise">
           PROJECTS.
